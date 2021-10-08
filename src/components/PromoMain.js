@@ -6,7 +6,7 @@ export default function PromoMain({ topTen, subject, date }) {
     <div className={styles.contents}>
       <Image
         className={styles.backgroundImg}
-        src="/icecream 1.jpg"
+        src="/icecream 1.png"
         alt="Tall ice cream"
         layout="fill"
       />
