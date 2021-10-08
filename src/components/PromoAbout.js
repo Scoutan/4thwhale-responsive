@@ -6,7 +6,7 @@ export default function PromoAbout({ header, textA, textB }) {
     <div className={styles.contents}>
       <Image
         className={styles.backgroundImg}
-        src="/moreicecream 1.svg"
+        src="/moreicecream 1.png"
         alt="Ice Cream Cones"
         layout="fill"
       />
