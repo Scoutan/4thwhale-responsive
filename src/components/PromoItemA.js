@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/Link'
 import styles from '../../styles/PromoItemA.module.css'
 
 export default function PromoItemA() {
@@ -6,17 +7,19 @@ export default function PromoItemA() {
     <div className={styles.contents}>
       <Image
         className={styles.backgroundImg}
-        src="/ubeicecream 1.svg"
+        src="/ubeicecream 1.png"
         alt="Purple ice cream"
         layout="fill"
       />
-      <a href="/">
-        <div className={styles.button}>
-          <span className={styles.typography}>
-            Get it
-          </span>
-        </div>
-      </a>
+      <Link href="/">
+        <a>
+          <div className={styles.button}>
+            <span className={styles.typography}>
+              Get it
+            </span>
+          </div>
+        </a>
+      </Link>
     </div>
   );
 }
