@@ -4,19 +4,23 @@
   box-sizing: border-box;
 
   position: relative;
-  width: 400px;
-  height: 860px;
+  width: 100%;
+  max-width: 400px;
+  height: 100%;
+  max-height: 860px;
+  margin: 0 0 50px 0;
 }
 
 .backgroundImg {
   z-index: 0;
+  object-fit: cover;
 }
 
 .textFrame {
   position: absolute;
-  width: 401px;
+  width: 100%;
   height: 310px;
-  left: -1px;
+  left: 0px;
   top: 275px;
   padding: 10px;
 
@@ -32,7 +36,6 @@
   justify-content: center;
   align-content: space-between;
 
-  width: 308px;
   height: 290px;
   margin: 10px auto;
 
@@ -45,35 +48,81 @@
   line-height: 60px;  /* or 150% */  
 }
 
-.top {
+.topText {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  margin: 0 auto;
 }
 
-.flexItemLeft, .flexItemRight {
+.topTen, .subject {
   flex: 100%;
   white-space: nowrap;
 }
 
-.bottom {
+.bottomText {
   flex: 100%;
   padding: 0 0 15px 0;
 }
 
-@media (max-width: 375px) {
+@media (min-width: 1435px) {
+  .typography {
+    font-size: 2.4rem;
+  }
+}
+
+@media (max-width: 1250px) {
+  .typography {
+    font-size: 2rem;
+  }
+
+  .bottomText {
+    padding: 0 0 25px 0;
+  }
+}
+
+@media (max-width: 1100px) {
+  .textFrame {
+    background: rgba(0, 0, 0, 0.25);
+  }
+
+  .typography {
+    font-size: 1.8rem;
+  }
+
+  .bottomText {
+    padding: 0 0 25px 0;
+  }
+}
+
+@media (max-width: 1000px) {
+  .textFrame {
+    background: rgba(0, 0, 0, 0.25);
+  }
+
+  .typography {
+    font-size: 1.6rem;
+  }
+
+  .bottomText {
+    padding: 0 0 25px 0;
+  }
+}
+
+@media (max-width: 960px) {
   .contents {
-    width: 375px;
+    min-width: 375px;
     height: 437px;
+    margin: 0 0 40px 0;
   }
 
   .backgroundImg {
-    object-fit: contain;
+    object-fit: cover;
   }
 
   .textFrame {
-    width: 375px;
+    width: 100%;
     height: 125px;
     left: -1px;
     top: 156px;
@@ -81,7 +130,7 @@
 
   .typography {
     justify-content: flex-start;
-    width: 375px;
+    width: 100%;
     height: 105px;
     margin: 0 0 0 0px;
 
@@ -89,16 +138,15 @@
     line-height: 35.16px; 
   }
 
-  .top {
+  .topText {
     flex-wrap: nowrap;
-    padding: 0 0 0 8px;
   }
 
-  .flexItemLeft, .flexItemRight {
+  .topTen, .subject {
     flex: 50%;
   }
 
-  .bottom {
+  .bottomText {
     padding: 0 10px 0 0;
   }
 }
