@@ -1,16 +1,18 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import Image from 'next/image'
 import styles from '../../styles/PromoMain.module.css'
 
 export default function PromoMain({ topTen, subject, date }) {
   const [imgSrc, setImgSrc] = useState('/icecream 1.png');
 
-  window.addEventListener('resize', () => {
-    if (window.innerWidth <= 375) {
-      setImgSrc('/icecream_wide.png');
-    } else {
-      setImgSrc('/icecream 1.png');
-    }
+  useEffect(() => {
+    window.addEventListener('resize', () => {
+      if (window.innerWidth <= 375) {
+        setImgSrc('/icecream_wide.png');
+      } else {
+        setImgSrc('/icecream 1.png');
+      }
+    })
   })
 
   return (
