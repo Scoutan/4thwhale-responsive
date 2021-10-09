@@ -43,10 +43,15 @@
 
 @media (max-width: 375px) {
   .contents {
-
+    width: 375px;
+    margin: 0 0 40px 0;
+  }
+  
+  .backgroundImg {
+    object-fit: cover;
   }
 
-  .backgroundImg {
-
+  .button {
+    left: 130px;
   }
 }
