@@ -20,6 +20,7 @@
   height: 56px;
   left: 142.5px;
   top: 314px;
+  padding: 15px 30px;
 
   background: #7D63B9;
   border: 4px solid #FFF0E6;
@@ -44,10 +45,15 @@
 
 @media (max-width: 375px) {
   .contents {
-
+    width: 375px;
+    margin: 0 0 40px 0;
   }
 
   .backgroundImg {
+    object-fit: cover;
+  }
 
+  .button {
+    left: 130px;
   }
 }
