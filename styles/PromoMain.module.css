@@ -40,7 +40,7 @@
   font-style: normal;
   font-weight: bold;
   font-size: 2.4rem;
-  text-shadow: 5px 5px 20px #000000;
+  text-shadow: 5px 5px 15px #000000;
   text-align: center;
   line-height: 60px;  /* or 150% */  
 }
@@ -57,37 +57,48 @@
   white-space: nowrap;
 }
 
+.bottom {
+  flex: 100%;
+  padding: 0 0 15px 0;
+}
+
 @media (max-width: 375px) {
   .contents {
-
+    width: 375px;
+    height: 437px;
   }
 
   .backgroundImg {
-
+    object-fit: contain;
   }
 
   .textFrame {
-
+    width: 375px;
+    height: 125px;
+    left: -1px;
+    top: 156px;
   }
 
   .typography {
+    justify-content: flex-start;
     width: 375px;
+    height: 105px;
+    margin: 0 0 0 0px;
+
+    font-size: 1.875rem;
+    line-height: 35.16px; 
   }
 
   .top {
     flex-wrap: nowrap;
+    padding: 0 0 0 8px;
   }
 
-  .flexItemLeft {
+  .flexItemLeft, .flexItemRight {
     flex: 50%;
   }
 
-  .flexItemRight{
-    flex: 50%;
+  .bottom {
+    padding: 0 10px 0 0;
   }
-}
-
-.bottom {
-  flex: 100%;
-  padding: 0 0 15px 0;
 }
