@@ -39,14 +39,30 @@
   flex-direction: row;
   flex-wrap: wrap;
 
-  height: 400px;
   width: 840px;
 }
 
 @media (max-width: 375px) {
-  .flexContainer {
+  .mainFlexContainer {
     flex-direction: column;
+    flex-wrap: wrap;
 
     max-width: 375px;
+  }
+
+  .flexContentLeft {
+    position: relative;
+    padding: 0px;
+    width: 375px;
+  }
+
+  .flexContentRight {
+    position: relative;
+    padding: 0px;
+    width: 375px;
+  }
+
+  .subFlexContainer {
+    width: 375px;
   }
 }
