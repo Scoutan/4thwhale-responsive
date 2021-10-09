@@ -3,14 +3,14 @@ import Image from 'next/image'
 import styles from '../../styles/PromoMain.module.css'
 
 export default function PromoMain({ topTen, subject, date }) {
-  const [imgSrc, setImgSrc] = useState('/icecream 1.png');
+  const [imgSrc, setImgSrc] = useState('/icecream.png');
 
   useEffect(() => {
     window.addEventListener('resize', () => {
       if (window.innerWidth <= 960) {
         setImgSrc('/icecream_wide.png');
       } else {
-        setImgSrc('/icecream 1.png');
+        setImgSrc('/icecream.png');
       }
     })
   })

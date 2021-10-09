@@ -3,14 +3,14 @@ import Image from 'next/image'
 import styles from '../../styles/PromoAbout.module.css'
 
 export default function PromoAbout({ header, textA, textB }) {
-  const [imgSrc, setImgSrc] = useState('/moreicecream 1.png');
+  const [imgSrc, setImgSrc] = useState('/moreicecream.png');
 
   useEffect(() => {
     window.addEventListener('resize', () => {
       if (window.innerWidth <= 960) {
         setImgSrc('/moreicecream_taller.png');
       } else {
-        setImgSrc('/moreicecream 1.png');
+        setImgSrc('/moreicecream.png');
       }
     })
   })
