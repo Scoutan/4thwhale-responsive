@@ -7,7 +7,7 @@ export default function PromoItemB() {
     <div className={styles.contents}>
       <Image
         className={styles.backgroundImg}
-        src="/Avocado-Ice-Cream-4-1 1.png"
+        src="/Avocado-Ice-Cream.png"
         alt="Green ice cream"
         layout="fill"
       />

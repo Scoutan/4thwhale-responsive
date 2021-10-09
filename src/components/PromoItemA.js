@@ -7,7 +7,7 @@ export default function PromoItemA() {
     <div className={styles.contents}>
       <Image
         className={styles.backgroundImg}
-        src="/ubeicecream 1.png"
+        src="/ubeicecream.png"
         alt="Purple ice cream"
         layout="fill"
       />
