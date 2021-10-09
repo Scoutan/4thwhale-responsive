@@ -42,19 +42,28 @@
 
 @media (max-width: 375px) {
   .contents {
-
-  }
-
-  .backgroundImg {
-
+    width: 375px;
+    height: 400px;
+    margin: 0;
   }
 
   .textFrame {
-
+    width: 294px;
+    height: 262px;
+    left: 40px;
+    top: 69px;
+    padding: 20px;
   }
 
-  .typography {
-    width: 375px;
+  .header {
+    font-size: 1.25rem;
+    line-height: 23.44px;
+    margin: 0 0 20px 0;
   }
 
+  .textBlock {
+    font-size: 0.74rem;
+    line-height: 15px;
+    padding: 0;
+  }
 }
