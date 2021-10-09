@@ -12,57 +12,52 @@
   max-width: 1435px;
 }
 
-.flexContentLeft {
-  flex: 480px;
+.flexContentLeft, .flexContentRight {
   align-self: stretch;
-  flex-grow: 0;
-
   position: relative;
   margin: 0;
   padding: 40px;
-  width: 480px;
+  width: 100%;
+}
+
+.flexContentLeft {
+  flex: 33%;  
+  max-width: 480px;
 }
 
 .flexContentRight {
-  flex: 955px;
-  align-self: stretch;
-  flex-grow: 0;
-
-  position: relative;
-  margin: 0;
-  padding: 40px;
-  width: 955px;
+  flex: 66%;
+  max-width: 955px;
 }
 
 .subFlexContainer {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-
-  width: 840px;
+  flex-wrap: nowrap;
+  width: 100%;
+  max-width: 840px;
+  height: 100%;
+  max-height: 400px;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 960px) {
   .mainFlexContainer {
-    flex-direction: column;
     flex-wrap: wrap;
-
-    max-width: 375px;
+    min-width: 375px;
+    max-width: 400px;
+    width: 100%;
   }
 
-  .flexContentLeft {
+  .flexContentLeft, .flexContentRight {
+    flex: 100%;
     position: relative;
     padding: 0px;
-    width: 375px;
-  }
-
-  .flexContentRight {
-    position: relative;
-    padding: 0px;
-    width: 375px;
   }
 
   .subFlexContainer {
-    width: 375px;
+    flex-wrap: wrap;
+    min-width: 375px;
+    height: 880px;
+    max-height: none;
   }
 }
