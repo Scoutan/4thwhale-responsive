@@ -46,6 +46,10 @@
     height: 400px;
     margin: 0;
   }
+  
+  .backgroundImg {
+    object-fit: cover;
+  }
 
   .textFrame {
     width: 294px;
