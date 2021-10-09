@@ -8,9 +8,9 @@ export default function PromoAbout({ header, textA, textB }) {
   useEffect(() => {
     window.addEventListener('resize', () => {
       if (window.innerWidth <= 375) {
-        setImgSrc('/moreicecream 1.png');
-      } else {
         setImgSrc('/moreicecream_taller.png');
+      } else {
+        setImgSrc('/moreicecream 1.png');
       }
     })
   })
