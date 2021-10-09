@@ -7,7 +7,7 @@ export default function PromoMain({ topTen, subject, date }) {
 
   useEffect(() => {
     window.addEventListener('resize', () => {
-      if (window.innerWidth <= 375) {
+      if (window.innerWidth <= 960) {
         setImgSrc('/icecream_wide.png');
       } else {
         setImgSrc('/icecream 1.png');
@@ -25,16 +25,15 @@ export default function PromoMain({ topTen, subject, date }) {
       />
       <div className={styles.textFrame}>
         <div className={styles.typography}>
-          <div className={styles.top}>
-            <span className={styles.flexItemLeft}>
-              {topTen}
+          <div className={styles.topText}>
+            <span className={styles.topTen}>
+              {topTen}&nbsp;
             </span>
-            &nbsp;
-            <span className={styles.flexItemRight}>
+            <span className={styles.subject}>
               {subject}
             </span>
           </div>
-          <div className={styles.bottom}>
+          <div className={styles.bottomText}>
             <div>{date}</div>
           </div>
         </div>
