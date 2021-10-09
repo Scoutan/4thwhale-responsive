@@ -1,12 +1,23 @@
+import { useState } from 'react'
 import Image from 'next/image'
 import styles from '../../styles/PromoAbout.module.css'
 
 export default function PromoAbout({ header, textA, textB }) {
+  const [imgSrc, setImgSrc] = useState('/moreicecream 1.png');
+
+  window.addEventListener('resize', () => {
+    if (window.innerWidth <= 375) {
+      setImgSrc('/moreicecream 1.png');
+    } else {
+      setImgSrc('/moreicecream_taller.png');
+    }
+  })
+
   return (
     <div className={styles.contents}>
       <Image
         className={styles.backgroundImg}
-        src="/moreicecream 1.png"
+        src={imgSrc}
         alt="Ice Cream Cones"
         layout="fill"
       />
