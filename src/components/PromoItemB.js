@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import styles from '../../styles/PromoItemB.module.css'
+//import styles from '../../styles/PromoItemB.module.css'
+import styles from '../../styles/GridPromoItemB.module.css'
 
 export default function PromoItemB() {
   return (

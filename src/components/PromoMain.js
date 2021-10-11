@@ -1,13 +1,14 @@
 import { useState, useEffect } from 'react'
 import Image from 'next/image'
-import styles from '../../styles/PromoMain.module.css'
+//import styles from '../../styles/PromoMain.module.css'
+import styles from '../../styles/GridPromoMain.module.css'
 
 export default function PromoMain({ topTen, subject, date }) {
   const [imgSrc, setImgSrc] = useState('/icecream.png');
 
   useEffect(() => {
     window.addEventListener('resize', () => {
-      if (window.innerWidth <= 960) {
+      if (window.innerWidth <= 1295) {
         setImgSrc('/icecream_wide.png');
       } else {
         setImgSrc('/icecream.png');
