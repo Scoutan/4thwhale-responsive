@@ -4,7 +4,7 @@ import Image from 'next/image'
 import styles from '../../styles/GridPromoAbout.module.css'
 
 export default function PromoAbout({ header, textA, textB }) {
-  const [imgSrc, setImgSrc] = useState('/moreicecream.png');
+  const [imgSrc, setImgSrc] = useState('/moreicecream_taller.png');
 
   useEffect(() => {
     window.addEventListener('resize', () => {
