@@ -1,7 +1,8 @@
 import Head from 'next/head'
 import PromoMain from '../components/PromoMain'
-import PromoItemA from '../components/PromoItemA'
-import PromoItemB from '../components/PromoItemB'
+// import PromoItemA from '../components/PromoItemA'
+// import PromoItemB from '../components/PromoItemB'
+import PromoItem from '../components/PromoItem'
 import PromoAbout from '../components/PromoAbout'
 //import styles from '../../styles/Home.module.css'
 import styles from '../../styles/GridHome.module.css'
@@ -46,10 +47,18 @@ export default function Home() {
           />
         </div>
         <div className={styles.box2}>
-          <PromoItemA />
+          <PromoItem
+            imgSrc={"/ubeicecream.png"}
+            imgAlt={"Purple ice cream"}
+            bgColor={"#7D63B9"}
+          />
         </div>
         <div className={styles.box3}>
-          <PromoItemB />
+          <PromoItem
+            imgSrc={"/Avocado-Ice-Cream.png"}
+            imgAlt={"Green ice cream"}
+            bgColor={"#206C00"}
+          />
         </div>
         <div className={styles.box4}>
           <PromoAbout
