@@ -1,5 +1,4 @@
 <h1>4th Whale Responsive Layout Test</h1>
-<hr>
 <h3>1st approach - Flexbox</h3>
 <p>
   My initial approach was to use flexbox, as I was not too knowledgeable about Responsive Web Design (RWD) in theory. I knew I was in a bad spot once I had the desktop layout completed and had to scale down the contents all the way to iPhone 8's 375px width. I pressed on just for the heck of it to see how it would turn out. I would say using flexbox for such layout made it way more complicated than it should be. 
