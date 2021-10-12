@@ -1,4 +1,4 @@
-<h1>4th Whale Responsive Layout Test.</h1>
+<h1>4th Whale Responsive Layout Test</h1>
 <hr>
 <h3>1st approach - Flexbox</h3>
 <p>
